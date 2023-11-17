@@ -100,7 +100,7 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    ![mahasiswa](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/f290bbaa-59c7-40c8-a65e-1b672b4e6ec3)  
 #
 #
-### DATA MANIPULATION 
+### DATA MANIPULATION ,
 1. Run script use AKADEMIK
 
    Perintah USE digunakan untuk memilih database yang akan digunakan dalam operasi manipulasi data.
