@@ -100,13 +100,14 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    ![mahasiswa](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/f290bbaa-59c7-40c8-a65e-1b672b4e6ec3)  
 #
 #
-### DATA MANIPULATION ,
+### DATA MANIPULATION 
 1. Run script use AKADEMIK
 
    Perintah USE digunakan untuk memilih database yang akan digunakan dalam operasi manipulasi data.
     ```
     use AKADEMIK;
     ```
+    ![use](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/ba5e9b77-4116-4d7e-9ef4-19fcbbf5e40c)
 
 2. Insert into FAKULTAS
 
@@ -114,28 +115,34 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
     ```
     insert into FAKULTAS(ID_FAKULTAS, FAKULTAS) values (1, 'Ekonomi & Bisnis'), (2, 'Ilmu Komputer');
     ```
+    ![insert fakultas](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/be21cdfd-b522-4949-bbff-e80b8fca30ab)
 
 3. Insert into JURUSAN
     ```
     insert into JURUSAN(ID_JURUSAN, ID_FAKULTAS, JURUSAN) values (21, 2, 'Informatika'), (22, 2, 'Sistem Informasi'), (23, 2, 'Teknik Komputer');
     ```
+    ![insert jurusan](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/ad89c884-0ede-4fbc-8a53-dc2633e42278)
 
 4. Insert into STRATA
     ```
     insert into STRATA(ID_STRATA, SINGKAT, STRATA) values (1, 'D1', 'Diploma'), (2, 'S1', 'Sarjana'), (3, 'S2', 'Magister');
     ```
+    ![insert strata](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/5b6533d9-2c37-4eb3-83c6-5d41faf32b5c)
 
 5. Insert into PROGRAM_STUDI
     ```
     insert into PROGRAM_STUDI(ID_PROGRAM_STUDI, ID_STRATA, ID_JURUSAN, PROGRAM_STUDI) values (211, 2, 21, 'Teknik Informatika'), (212, 2, 21, 'Teknik Komputer'), (219, 3, 21, 'Magister Ilmu Komputer');
     ```
+    ![insert prodi](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/44865c6e-2ed6-4b07-9e6a-fb67a46a56ba)
 
 6. Insert into SELEKSI_MASUK
     ```
     insert into SELEKSI_MASUK(ID_SELEKSI_MASUK, SINGKAT, SELEKSI_MASUK) values (1, 'SNMPTN', 'SELEKSI NASIONAL MAHASISWA PERGURUAN TINGGI NEGERI'), (2, 'SBMPTN', 'SELEKSI BERSAMA MAHASISWA PERGURUAN TINGGI NEGERI');
     ```
+    ![insert seleksi masuk](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/c8c105b0-82c2-4010-8e22-e7ec96df84ee)
 
 7. Insert into MAHASISWA
     ```
     insert into MAHASISWA(NIM, ID_SELEKSI_MASUK, ID_PROGRAM_STUDI, NAMA, ANGKATAN, TGL_LAHIR, KOTA_LAHIR, JENIS_KELAMIN) values ('225150600111021', 1, 211, 'NANA', 2022, '2003-03-01', 'Jakarta', 'W'), ('235150600111021', 2, 212, 'ANTO', 2023, '2005-10-02', 'Balikpapan', 'P');
     ```
+    ![insert mahasiswa](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/b3cbe75b-4982-4a5b-a68f-7ddd4d01d7b9)
