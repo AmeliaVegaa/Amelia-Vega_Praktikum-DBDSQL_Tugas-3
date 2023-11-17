@@ -1,20 +1,20 @@
 # SQL DATA MANIPULATION LANGUAGE
 Praktikum 3 - Amelia Vega - 225150600111021 - DBDSQL Kelas A
-
-
+ 
 ### TAHAP-TAHAP PENGERJAAN
 Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `create schema` dan `create table`. Adapun yang kedua yaitu Data Manipulation berisi `use schema` dan `insert into`.
 
 
-
 ### DATA DEFINITION
 1. Membuat schema AKADEMIK
-	Schema AKADEMIK digunakan untuk mengorganisasi dan mengelompokkan tabel yang terkait dengan data akademik.
+
+   Schema AKADEMIK digunakan untuk mengorganisasi dan mengelompokkan tabel yang terkait dengan data akademik.
    ```
    create schema AKADEMIK;
    ```
 2. Buat table FAKULTAS
-	Tabel FAKULTAS digunakan untuk menyimpan informasi tentang fakultas-fakultas yang ada di institusi akademik.
+
+   Tabel FAKULTAS digunakan untuk menyimpan informasi tentang fakultas-fakultas yang ada di institusi akademik.
    ```
    create table AKADEMIK.FAKULTAS (
 	ID_FAKULTAS smallint primary key,
@@ -22,7 +22,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    )
    ```
 3. Buat tabel JURUSAN
-	Tabel JURUSAN menyimpan informasi tentang jurusan-jurusan yang terkait dengan fakultas di institusi akademik.
+
+   Tabel JURUSAN menyimpan informasi tentang jurusan-jurusan yang terkait dengan fakultas di institusi akademik.
    ```
    create table AKADEMIK.JURUSAN (
 	ID_JURUSAN smallint not null primary key,
@@ -32,7 +33,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    )
    ```
 4. Buat tabel STRATA
-	Tabel STRATA menyimpan informasi tentang tingkat pendidikan dalam konteks akademik.
+
+   Tabel STRATA menyimpan informasi tentang tingkat pendidikan dalam konteks akademik.
    ```
    create table AKADEMIK.STRATA (
 	ID_STRATA smallint not null primary key,
@@ -41,7 +43,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    )
    ```
 5. Buat tabel PROGRAM_STUDI
-	Tabel PRODI digunakan untuk menyimpan informasi tentang program studi yang terkait dengan jurusan di institusi akademik.
+
+   Tabel PRODI digunakan untuk menyimpan informasi tentang program studi yang terkait dengan jurusan di institusi akademik.
    ```
    create table AKADEMIK.PROGRAM_STUDI (
 	ID_PROGRAM_STUDI smallint not null primary key,
@@ -53,7 +56,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    )
    ```
 6. Buat tabel SELEKSI_MASUK
-	Tabel SELEKSI_MASUK digunakan untuk menyimpan informasi tentang proses seleksi masuk ke institusi akademik.
+
+   Tabel SELEKSI_MASUK digunakan untuk menyimpan informasi tentang proses seleksi masuk ke institusi akademik.
    ```
    create table AKADEMIK.SELEKSI_MASUK (
 	ID_SELEKSI_MASUK smallint not null primary key,
@@ -62,7 +66,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    )
    ```
 7. Buat tabel MAHASISWA
-	Tabel MAHASISWA digunakan untuk menyimpan informasi tentang mahasiswa-mahasiswa yang terdaftar di institusi akademik.
+
+   Tabel MAHASISWA digunakan untuk menyimpan informasi tentang mahasiswa-mahasiswa yang terdaftar di institusi akademik.
    ```
    create table AKADEMIK.MAHASISWA (
 	NIM VARCHAR(15) not null primary key,
@@ -82,13 +87,15 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
  
 ### DATA MANIPULATION 
 1. Run script use AKADEMIK
-	Perintah USE digunakan untuk memilih database yang akan digunakan dalam operasi manipulasi data.
+
+   Perintah USE digunakan untuk memilih database yang akan digunakan dalam operasi manipulasi data.
     ```
     use AKADEMIK;
     ```
 
 2. Insert into FAKULTAS
-	Perintah INSERT into ... digunakan untuk memasukkan data baru ke dalam tabel tertentu (berlaku dari poin 2 sampai poin 7).
+
+   Perintah INSERT into ... digunakan untuk memasukkan data baru ke dalam tabel tertentu (berlaku dari poin 2 sampai poin 7).
     ```
     insert into FAKULTAS(ID_FAKULTAS, FAKULTAS) values (1, 'Ekonomi & Bisnis'), (2, 'Ilmu Komputer');
     ```
