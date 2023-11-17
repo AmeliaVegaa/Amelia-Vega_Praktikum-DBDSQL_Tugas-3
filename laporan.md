@@ -1,10 +1,11 @@
 # SQL DATA MANIPULATION LANGUAGE
 Praktikum 3 - Amelia Vega - 225150600111021 - DBDSQL Kelas A
- 
+#
+#
 ### TAHAP-TAHAP PENGERJAAN
 Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `create schema` dan `create table`. Adapun yang kedua yaitu Data Manipulation berisi `use schema` dan `insert into`.
-
-
+#
+#
 ### DATA DEFINITION
 1. Membuat schema AKADEMIK
 
@@ -24,6 +25,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
 	FAKULTAS VARCHAR(45)
    )
    ```
+   ![fakultas](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/295db81b-9474-4795-b38e-d364b6740842)
+
 3. Buat tabel JURUSAN
 
    Tabel JURUSAN menyimpan informasi tentang jurusan-jurusan yang terkait dengan fakultas di institusi akademik.
@@ -35,6 +38,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
 	foreign key (ID_FAKULTAS) references AKADEMIK.FAKULTAS(ID_FAKULTAS)
    )
    ```
+   ![jurusan](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/6d743991-7857-4be6-a8ce-d241539fffe3)
+
 4. Buat tabel STRATA
 
    Tabel STRATA menyimpan informasi tentang tingkat pendidikan dalam konteks akademik.
@@ -45,6 +50,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
 	STRATA VARCHAR(45)
    )
    ```
+   ![strata](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/d1ff3166-da8c-4135-8762-2f2eb88c7515)
+
 5. Buat tabel PROGRAM_STUDI
 
    Tabel PRODI digunakan untuk menyimpan informasi tentang program studi yang terkait dengan jurusan di institusi akademik.
@@ -58,6 +65,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
 	foreign key (ID_JURUSAN) references AKADEMIK.JURUSAN(ID_JURUSAN)
    )
    ```
+   ![prodi](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/4f8c0bb4-da0b-4ac1-af12-fbc28b446a9b)
+
 6. Buat tabel SELEKSI_MASUK
 
    Tabel SELEKSI_MASUK digunakan untuk menyimpan informasi tentang proses seleksi masuk ke institusi akademik.
@@ -68,6 +77,8 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
 	SELEKSI_MASUK VARCHAR(60)
    )
    ```
+   ![seleksi masuk](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/206ec251-ff48-4185-972d-0eabb3d8240a)
+
 7. Buat tabel MAHASISWA
 
    Tabel MAHASISWA digunakan untuk menyimpan informasi tentang mahasiswa-mahasiswa yang terdaftar di institusi akademik.
@@ -86,8 +97,9 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
 	foreign key (ID_SELEKSI_MASUK) references AKADEMIK.SELEKSI_MASUK(ID_SELEKSI_MASUK)
    )
    ```
-
- 
+   ![mahasiswa](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/f290bbaa-59c7-40c8-a65e-1b672b4e6ec3)  
+#
+#
 ### DATA MANIPULATION 
 1. Run script use AKADEMIK
 
