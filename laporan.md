@@ -12,6 +12,9 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    ```
    create schema AKADEMIK;
    ```
+   !
+![schema](https://github.com/AmeliaVegaa/Amelia-Vega_Praktikum-DBDSQL_Tugas-3/assets/133181467/d0b574c4-6bfd-4cd1-9f77-94f5a0e5c028)
+
 2. Buat table FAKULTAS
 
    Tabel FAKULTAS digunakan untuk menyimpan informasi tentang fakultas-fakultas yang ada di institusi akademik.
