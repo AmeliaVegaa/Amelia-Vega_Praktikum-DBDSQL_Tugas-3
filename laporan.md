@@ -1,8 +1,11 @@
 # SQL DATA MANIPULATION LANGUAGE
 Praktikum 3 - Amelia Vega - 225150600111021 - DBDSQL Kelas A
 
+
 ### TAHAP-TAHAP PENGERJAAN
 Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `create schema` dan `create table`. Adapun yang kedua yaitu Data Manipulation berisi `use schema` dan `insert into`.
+
+
 
 ### DATA DEFINITION
 1. Membuat schema AKADEMIK
@@ -76,6 +79,7 @@ Laporan ini dibagi menjadi 2 bagian. Pertama ada Data Definition yang berisi `cr
    )
    ```
 
+ 
 ### DATA MANIPULATION 
 1. Run script use AKADEMIK
 	Perintah USE digunakan untuk memilih database yang akan digunakan dalam operasi manipulasi data.
